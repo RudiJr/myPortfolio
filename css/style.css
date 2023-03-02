@@ -1,0 +1,63 @@
+:root {
+    --bg-color: #1E1D1D;
+    --main-txt: #C2C2C2;
+    --sub-txt: #8A8A8A;
+    --main-card: #212020;
+    --sub-card: #1F1E1E;
+    --name: #FFFFFF;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    background-color: var(--main-card);
+    width: 386px;
+    height: 534px;
+    left: 607px;
+    top: 339px;
+    border-radius: 5%;
+}
+
+.my-picture {
+    height: 280px;
+    left: 41px;
+    top: 15px;
+    border-radius: 50%;
+}
+
+.name, .function {
+    color: var(--name);
+}
+
+
+.btn {
+   background: #6005b6;
+    color: var(--name);
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    padding: 2rem;
+    border: #1ab7bd 5px solid;
+    border-radius: 12%;
+}
+
+.light-mode {
+    background-color: #FFF;
+    color: #000;
+  }
+
+.main {
+    margin-top: 2rem;
+}
+
+.main-text {
+    color: var(--main-txt);
+    padding-top: 2rem;
+    width: 1000px;
+}
