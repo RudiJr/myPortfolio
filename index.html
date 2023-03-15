@@ -4,32 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>My Portfolio</title>
+    <title>Rudi Júnior | Frontend Developer</title>
 </head>
 <body>
- 
-    <section class="profile">
-        <div class="circle">
-            <img src="img/me.png" alt="My Picture" class="my-picture"> 
+    <section class="profile" id="profile">
+        <div class="profile-content">
+            <h3>Hello, my name is</h3>
+            <h1> Rudi Júnior</h1>
+            <h3>And i'm a <span class="profession">Frontend Developer</span></h3>
+            
+            <div class="social-media">
+                <a href="#"><i class="bx bxl-linkedin"></i></a>
+                <a href="#"><i class="bx bxl-github"></i></a>
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+                <a href="#"><i class="bx bxl-instagram"></i></a>
+            </div>
+            <a href="#" class="btn-cv">Download CV</a>
         </div>
-        <h1 class="name">Rudi Júnior</h1>
-        <h2 class="function">Front End Developer</h2>
+            
+        <div class="profile-img">
+            <img src="img/my-picture.png" alt="Rudi Júnior picture">
+        </div>
     </section>
-   
-    <button class="btn theme" id="btn-theme">Dark/Light Theme</button>
-
-    <main class="main">
-        <div class="btn-list">
-            <button class="btn about" id="btn-about">About Me</button>
-            <button class="btn skills" id="btn-skill">Skills</button>
-            <button class="btn projects" id="btn-project">Projects</button>
-            <button class="btn contact" id="btn-contact">Contact</button>
-        </div>
-        <p class="main-text"></p>
-    </main>
-
     <script src="js/main.js"></script>
 </body>
 </html>
