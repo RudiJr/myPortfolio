@@ -1,63 +1,107 @@
-:root {
-    --bg-color: #1E1D1D;
-    --main-txt: #C2C2C2;
-    --sub-txt: #8A8A8A;
-    --main-card: #212020;
-    --sub-card: #1F1E1E;
-    --name: #FFFFFF;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
 }
 
-body {
+:root{
+    --bg-color: #141414;
+    --main-txt: #CCCCCC;
+    --color: #3C3C3C;
+    --sub-color: #DC143C;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    height: 100vh;
     background-color: var(--bg-color);
-}
-
-.profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 22px;
-    background-color: var(--main-card);
-    width: 386px;
-    height: 534px;
-    left: 607px;
-    top: 339px;
-    border-radius: 5%;
-}
-
-.my-picture {
-    height: 280px;
-    left: 41px;
-    top: 15px;
-    border-radius: 50%;
-}
-
-.name, .function {
-    color: var(--name);
-}
-
-
-.btn {
-   background: #6005b6;
-    color: var(--name);
-    cursor: pointer;
-    margin-top: 2rem;
-    margin-left: 2rem;
-    padding: 2rem;
-    border: #1ab7bd 5px solid;
-    border-radius: 12%;
-}
-
-.light-mode {
-    background-color: #FFF;
-    color: #000;
-  }
-
-.main {
-    margin-top: 2rem;
-}
-
-.main-text {
     color: var(--main-txt);
-    padding-top: 2rem;
-    width: 1000px;
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-img img{
+    width: 23vw;
+}
+
+.profile-content h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.profile-content h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.profile-content p{
+    font-size: 1.6rem;
+}
+
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent; 
+    border: .2rem solid var(--sub-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--sub-color); 
+    margin: 3rem 1.5rem 3rem 0;
+}
+
+.social-media a:hover {
+    background: var(--sub-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 1rem var(--sub-color);
+    transition: .5s ease;
+}
+
+.profession{
+    color: var(--sub-color);
+}
+
+.profile-content:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+.btn-cv {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--sub-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: var(--main-txt);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+    border: .2rem solid transparent;
+}
+
+.btn-cv:hover {
+    background-color: transparent;
+    border: .2rem solid var(--sub-color);
 }
