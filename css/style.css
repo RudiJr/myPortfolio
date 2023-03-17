@@ -13,9 +13,9 @@
 
 :root{
     --bg-color: #141414;
+    --main-color: #5a189a; 
     --main-txt: #CCCCCC;
-    --color: #3C3C3C;
-    --sub-color: #DC143C;
+    --reserve-color: #3C3C3C;
 }
 
 html{
@@ -66,22 +66,21 @@ section{
     width: 4rem;
     height: 4rem;
     background: transparent; 
-    border: .2rem solid var(--sub-color);
+    border: .2rem solid var(--main-color);
     border-radius: 50%;
     font-size: 2rem;
-    color: var(--sub-color); 
+    color: var(--main-color); 
     margin: 3rem 1.5rem 3rem 0;
 }
 
 .social-media a:hover {
-    background: var(--sub-color);
+    background: var(--main-color);
     color: var(--bg-color);
-    box-shadow: 0 0 1rem var(--sub-color);
     transition: .5s ease;
 }
 
 .profession{
-    color: var(--sub-color);
+    color: var(--main-color);
 }
 
 .profile-content:nth-of-type(2) {
@@ -91,7 +90,7 @@ section{
 .btn-cv {
     display: inline-block;
     padding: 1rem 2.8rem;
-    background: var(--sub-color);
+    background: var(--main-color);
     border-radius: 4rem;
     font-size: 1.6rem;
     color: var(--main-txt);
@@ -103,5 +102,5 @@ section{
 
 .btn-cv:hover {
     background-color: transparent;
-    border: .2rem solid var(--sub-color);
+    border: .2rem solid var(--main-color);
 }
