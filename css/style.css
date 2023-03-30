@@ -29,7 +29,7 @@ body{
     color: var(--main-txt);
 }
 
-section{
+section, main{
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
@@ -83,10 +83,6 @@ section{
     color: var(--main-color);
 }
 
-.profile-content:nth-of-type(2) {
-    margin-bottom: 2rem;
-}
-
 .btn-cv {
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -103,4 +99,68 @@ section{
 .btn-cv:hover {
     background-color: transparent;
     border: .2rem solid var(--main-color);
+}
+
+/*main*/
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+span{
+    color: var(--main-color);
+}
+
+.title {
+    text-align: center;
+    font-size: 4.5rem;
+    color: var(--main-txt);
+}
+
+.about-content h2{
+    text-align: left;
+    line-height: 1.2rem;
+}
+
+.about-content h1{
+    font-size: 2.6rem;
+    margin-top: 3rem;
+}
+
+.about-content p{
+    font-size: 1.6rem;
+    margin: 0 0 3rem;
+    width: 35vw;
+}
+.skills h2 {
+    line-height: 1.2rem;
+    margin-top: 10.70rem; 
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 7rem;
+}
+
+.card {
+    height: 120px;
+    width: 140px;
+    border-radius: 1.25rem;
+    background: var(--card-color);
+    margin: 0 1.25rem 1rem 0;
+    text-align: center;
+}
+
+.card i {
+    font-size: 6rem;
+    margin: 1rem 0;
+    color: var(--main-color);
+}
+
+.box .card h5 {
+    font-size: 1.44rem;
 }
