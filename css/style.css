@@ -15,7 +15,7 @@
     --bg-color: #141414;
     --main-color: #5a189a; 
     --main-txt: #CCCCCC;
-    --reserve-color: #3C3C3C;
+    --card-color: #191919;
 }
 
 html{
@@ -33,6 +33,44 @@ section, main{
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
+
+span{
+    color: var(--main-color);
+}
+
+
+/* header */
+
+.header {
+    position: fixed;
+    width: 100%;
+    right: 3rem;
+    padding: 2rem 9%;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar a {
+    font-size: 1.8rem;
+    color: var(--main-txt);
+    margin-left: 4rem;
+    transition: .3s;
+    font-weight: 500;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--main-txt);
+    display: none;
+}
+
+/* profile section */
 
 .profile{
     display: flex;
@@ -101,16 +139,13 @@ section, main{
     border: .2rem solid var(--main-color);
 }
 
-/*main*/
+/*main section*/
+
 .about {
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 2rem;
-}
-
-span{
-    color: var(--main-color);
 }
 
 .title {
@@ -134,6 +169,7 @@ span{
     margin: 0 0 3rem;
     width: 35vw;
 }
+
 .skills h2 {
     line-height: 1.2rem;
     margin-top: 10.70rem; 
