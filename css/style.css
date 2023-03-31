@@ -44,9 +44,9 @@ span{
 .header {
     position: fixed;
     width: 100%;
-    right: 3rem;
     padding: 2rem 9%;
     background-color: var(--bg-color);
+    border-bottom: #5a189a solid .10rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -55,7 +55,7 @@ span{
 .navbar a {
     font-size: 1.8rem;
     color: var(--main-txt);
-    margin-left: 4rem;
+    margin: 0 2.58rem 0 1.20rem;
     transition: .3s;
     font-weight: 500;
 }
