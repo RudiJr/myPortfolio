@@ -117,10 +117,6 @@ span{
     transition: .5s ease;
 }
 
-.profession{
-    color: var(--main-color);
-}
-
 .btn-cv {
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -199,4 +195,52 @@ span{
 
 .box .card h5 {
     font-size: 1.44rem;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+}
+
+.contact a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    background: transparent; 
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color); 
+    margin: 0 3rem 2rem 3rem;
+}
+
+.social-box {
+    display: flex;
+    justify-content: center;
+}
+
+.social-card i {
+    font-size: 6rem;
+    margin: 1rem 0;
+    color: var(--main-color);
+}
+
+.social-card h5 {
+    font-size: 1.80rem;
+    text-align: center;
+}
+
+.contact h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contact > :first-child {
+    margin-bottom: 8rem;
 }
