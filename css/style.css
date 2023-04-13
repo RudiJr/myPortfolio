@@ -166,7 +166,6 @@ span{
     width: 35vw;
 }
 
-
 .skills h2 {
     margin-top: 8.70rem; 
     background: linear-gradient(130deg, var(--main-color) 50%, var(--main-txt) 0);
@@ -249,4 +248,9 @@ span{
 
 .contact > :first-child {
     margin-bottom: 8rem;
+}
+
+.social-card i:hover {
+    color: var(--main-txt);
+    transition: ease-in-out .2s;
 }
