@@ -232,7 +232,11 @@ span{
 .social-card i {
     font-size: 6rem;
     margin: 1rem 0;
-    color: var(--main-color);
+    background: linear-gradient(140deg, var(--main-color) 30%, var(--main-txt) 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
 }
 
 .social-card h5 {
@@ -251,6 +255,9 @@ span{
 }
 
 .social-card i:hover {
-    color: var(--main-txt);
-    transition: ease-in-out .2s;
+    background: var(--main-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: ease-in-out .6s;
 }
