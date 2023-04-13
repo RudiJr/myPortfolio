@@ -39,7 +39,7 @@ span{
 }
 
 
-/* header */
+/* Header */
 
 .header {
     position: fixed;
@@ -70,7 +70,7 @@ span{
     display: none;
 }
 
-/* profile section */
+/* Profile section */
 
 .profile{
     display: flex;
@@ -135,7 +135,7 @@ span{
     border: .2rem solid var(--main-color);
 }
 
-/*main section*/
+/* Main section */
 
 .about {
     display: flex;
@@ -166,16 +166,20 @@ span{
     width: 35vw;
 }
 
+
 .skills h2 {
-    line-height: 1.2rem;
-    margin-top: 11.20rem; 
+    margin-top: 8.70rem; 
+    background: linear-gradient(130deg, var(--main-color) 50%, var(--main-txt) 0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .box {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 7rem;
+    margin-top: 4rem;
 }
 
 .card {
@@ -196,6 +200,8 @@ span{
 .box .card h5 {
     font-size: 1.44rem;
 }
+
+/* Contact section */
 
 .contact {
     display: flex;
