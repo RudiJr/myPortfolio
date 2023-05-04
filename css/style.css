@@ -16,6 +16,8 @@
     --main-color: #5a189a;
     --main-txt: #CCCCCC;
     --card-color: #191919;
+
+    --hue: 255;
 }
 
 html {
@@ -263,4 +265,23 @@ span {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: ease-in-out .6s;
+}
+
+/* project section */ 
+.project-title, .more {
+    text-align: center;
+}
+
+.project-title {
+    font-size: 5.6rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--main-color) 50%, var(--main-txt) 0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+    
+.more{
+    padding-top: 1rem;
+    font-size: 1.65rem;
 }
