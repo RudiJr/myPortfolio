@@ -1,10 +1,10 @@
-const menu = document.getElementById("navbar");
+// Header > nav 
 const menuBtn = document.getElementsByClassName("menu");
 
 for (let i = 0; i < menuBtn.length; i++) {
-    menuBtn[i].addEventListener("click", function() {
-      const activeBtn = document.getElementsByClassName("active");
-      activeBtn[0].className = activeBtn[0].className.replace(" active", "");
-      this.className += " active";
-    });
-  }
+  menuBtn[i].addEventListener("click", function () {
+    const activeBtn = document.getElementsByClassName("active");
+    activeBtn[0].className = activeBtn[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
