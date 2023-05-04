@@ -16,6 +16,8 @@
     --main-color: #5a189a;
     --main-txt: #CCCCCC;
     --card-color: #191919;
+    --arrow-color: #721de0;
+    --swiper-theme-color: #5e0cc2;
 
     --hue: 255;
 }
@@ -51,6 +53,7 @@ span {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    z-index: 2;
 }
 
 .navbar a {
@@ -282,6 +285,29 @@ span {
 }
     
 .more{
-    padding-top: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
     font-size: 1.65rem;
+}
+
+/* swiper style */
+.swiper {
+    width: 55vw;
+    height: 65vh;
+    z-index: 1;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    border-radius: 20px;
+    font-size: 60px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+   display: flex;
+   justify-content: center;
+   color: var(--arrow-color);
 }
