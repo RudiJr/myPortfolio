@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -11,33 +11,32 @@
     font-family: 'Poppins', sans-serif;
 }
 
-:root{
+:root {
     --bg-color: #141414;
-    --main-color: #5a189a; 
+    --main-color: #5a189a;
     --main-txt: #CCCCCC;
     --card-color: #191919;
 }
 
-html{
+html {
     font-size: 62.5%;
     overflow-x: hidden;
 }
 
-body{
+body {
     height: 100vh;
     background-color: var(--bg-color);
     color: var(--main-txt);
 }
 
-section, main{
+section, main {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
 
-span{
+span {
     color: var(--main-color);
 }
-
 
 /* Header */
 
@@ -72,42 +71,42 @@ span{
 
 /* Profile section */
 
-.profile{
+.profile {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.profile-img img{
+.profile-img img {
     width: 23vw;
 }
 
-.profile-content h3{
+.profile-content h3 {
     font-size: 3.2rem;
     font-weight: 700;
 }
 
-.profile-content h1{
+.profile-content h1 {
     font-size: 5.6rem;
     font-weight: 700;
     line-height: 1.3;
 }
 
-.profile-content p{
+.profile-content p {
     font-size: 1.6rem;
 }
 
-.social-media a{
+.social-media a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 4rem;
     height: 4rem;
-    background: transparent; 
+    background: transparent;
     border: .2rem solid var(--main-color);
     border-radius: 50%;
     font-size: 2rem;
-    color: var(--main-color); 
+    color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
 }
 
@@ -150,24 +149,29 @@ span{
     color: var(--main-txt);
 }
 
-.about-content h2{
-    text-align: left;
-    line-height: 1.2rem;
+.about-content {
+    overflow: unset;
 }
 
-.about-content h1{
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2rem;
+    overflow: unset;
+}
+
+.about-content h1 {
     font-size: 2.6rem;
     margin-top: 3rem;
 }
 
-.about-content p{
+.about-content p {
     font-size: 1.6rem;
     margin: 0 0 3rem;
     width: 35vw;
 }
 
 .skills h2 {
-    margin-top: 8.70rem; 
+    margin-top: 8.70rem;
     background: linear-gradient(130deg, var(--main-color) 50%, var(--main-txt) 0);
     background-clip: text;
     -webkit-background-clip: text;
@@ -210,17 +214,17 @@ span{
     padding: 0;
 }
 
-.contact a{
+.contact a {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 10rem;
     height: 10rem;
-    background: transparent; 
+    background: transparent;
     border: .2rem solid var(--main-color);
     border-radius: 50%;
     font-size: 2rem;
-    color: var(--main-color); 
+    color: var(--main-color);
     margin: 0 3rem 2rem 3rem;
 }
 
@@ -236,7 +240,6 @@ span{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
 }
 
 .social-card h5 {
@@ -244,13 +247,13 @@ span{
     text-align: center;
 }
 
-.contact h1{
+.contact h1 {
     font-size: 5.6rem;
     font-weight: 700;
     text-align: center;
 }
 
-.contact > :first-child {
+.contact> :first-child {
     margin-bottom: 8rem;
 }
 
