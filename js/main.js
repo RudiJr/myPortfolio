@@ -31,3 +31,23 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+// hover project section
+const modalHover = document.querySelectorAll(".swiper-slide");
+const modal = document.querySelectorAll(".slide-modal");
+
+modalHover.forEach((element) => {
+  element.addEventListener("mouseover", () => {
+    modal.forEach((item) => {
+      item.style.display = "flex";
+    });
+  });
+});
+
+modalHover.forEach((element) => {
+  element.addEventListener("mouseout", () => {
+    modal.forEach((item) => {
+      item.style.display = "none";
+    });
+  });
+});
