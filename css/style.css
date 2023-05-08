@@ -16,8 +16,9 @@
     --main-color: #5a189a;
     --main-txt: #CCCCCC;
     --card-color: #191919;
-    --arrow-color: #721de0;
-    --swiper-theme-color: #5e0cc2;
+    
+    --arrow-color: var(--bg-color);
+    --swiper-theme-color: var(--bg-color);
 
     --hue: 255;
 }
@@ -303,7 +304,6 @@ span {
     align-items: center;
     background-size: cover;
     border-radius: 20px;
-    font-size: 60px;
 }
 
 .swiper-button-prev, .swiper-button-next {
@@ -312,3 +312,73 @@ span {
    color: var(--arrow-color);
 }
 
+.slide-modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0, .1), #7b2cbf);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); 
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+    border-radius: 20px;
+}
+
+.slide-modal h4 {
+    font-size: 3rem;
+}
+
+.slide-modal p {
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+    width: 30vw;
+}
+
+.slide-modal h4, .slide-modal p {
+    color: var(--bg-color);
+}
+
+.slide-modal a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 7rem;
+    background: var(--bg-color);
+    border-radius: 50%;
+    margin: 0 2rem 1rem 2rem;
+    
+}
+
+.tech i{
+    width: 7.60rem;
+    height: 7.60rem;
+    font-size: 7.20rem; 
+    color: var(--card-color);
+    border-radius: 25%;
+    background: var(--main-txt);
+    margin: 0 1rem 0 1rem;
+}
+
+.tech p {
+    font-size: 2.60rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+.slide-modal a i{
+    font-size: 4.40rem;
+    color: var(--main-txt);
+}
+
+.tech {
+    margin-bottom: 7rem;
+}
+
+.icons {
+    margin-bottom: 1rem;
+}
