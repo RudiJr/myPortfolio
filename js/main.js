@@ -51,19 +51,3 @@ modalHover.forEach((element) => {
     });
   });
 });
-
-
-// hide/show section when cliked 
-const navLinks = document.querySelectorAll('nav a');
-
-navLinks.forEach(link => {
-  link.addEventListener('click', event => {
-    event.preventDefault();
-    const target = event.target.getAttribute('data-target');
-    document.querySelectorAll('main, section:not(:first-of-type)').forEach(section => {
-      section.style.display = 'none';
-    });
-
-    document.getElementById(target).style.display = 'flex';
-  });
-});
