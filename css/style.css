@@ -362,6 +362,7 @@ span {
     border-radius: 25%;
     background: var(--main-txt);
     margin: 0 1rem 0 1rem;
+    padding-top: .4rem;
 }
 
 .tech p {
