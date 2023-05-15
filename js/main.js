@@ -1,15 +1,23 @@
-// on click nav active link 
-const menuBtn = document.getElementsByClassName("menu");
-
-for (let i = 0; i < menuBtn.length; i++) {
-  menuBtn[i].addEventListener("click", function () {
-    const activeBtn = document.getElementsByClassName("active");
-    activeBtn[0].className = activeBtn[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-
 // scroll section active link 
+const content = document.querySelectorAll('section, main');
+const navLinks = document.querySelectorAll('header nav a');
+
+window.onscroll = () => {
+    content.forEach(sec => {
+      let top = window.scrollY;
+      let offset = sec.offsetTop - 150;
+      let height = sec.offsetHeight;
+      let id = sec.getAttribute('id');
+
+      if(top >= offset && top < offset + height){
+        navLinks.forEach(links => {
+          links.classList.remove('active');
+          document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+        });
+      };
+    });
+};
+
 
 // swiper project section
 const swiper = new Swiper('.swiper', {
