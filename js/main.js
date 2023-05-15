@@ -1,4 +1,4 @@
-// Header > nav 
+// on click nav active link 
 const menuBtn = document.getElementsByClassName("menu");
 
 for (let i = 0; i < menuBtn.length; i++) {
@@ -8,6 +8,8 @@ for (let i = 0; i < menuBtn.length; i++) {
     this.className += " active";
   });
 }
+
+// scroll section active link 
 
 // swiper project section
 const swiper = new Swiper('.swiper', {
@@ -32,7 +34,7 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-// hover project section
+// Modal hover project section
 const modalHover = document.querySelectorAll(".swiper-slide");
 const modal = document.querySelectorAll(".slide-modal");
 
