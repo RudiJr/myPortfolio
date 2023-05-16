@@ -218,6 +218,7 @@ span {
     align-items: center;
     flex-direction: column;
     padding: 0;
+    position: relative;
 }
 
 .contact a {
@@ -260,7 +261,7 @@ span {
 }
 
 .contact> :first-child {
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
 }
 
 .social-card i:hover {
@@ -278,7 +279,9 @@ span {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 10rem;
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 2rem;
 }
 
 .footer p {
