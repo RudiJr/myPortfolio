@@ -1,3 +1,12 @@
+// toggle navbar icon 
+const nav = document.querySelector('.navbar'); 
+const navIcon = document.querySelector('#menu-icon');
+
+navIcon.onclick = () => {
+  navIcon.classList.toggle('bx-x');
+  nav.classList.toggle('active');
+};
+
 // scroll section active link 
 const content = document.querySelectorAll('section, main');
 const navLinks = document.querySelectorAll('header nav a');
@@ -17,19 +26,9 @@ window.onscroll = () => {
       };
     });
 
-    // toggle navbar icon 
-    const nav = document.querySelector('.navbar'); 
-    const navIcon = document.querySelector('#menu-icon');
-
-    navIcon.onclick = () => {
-      navIcon.classList.toggle('bx-x');
-      nav.classList.toggle('active');
-    };
-
     // remove toggled icon and navbar when click nav link
     navIcon.classList.remove('bx-x');
     nav.classList.remove('active');
-
 };
 
 
