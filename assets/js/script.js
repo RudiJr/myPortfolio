@@ -83,10 +83,10 @@ ScrollReveal({
   delay: 200
 });
 
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .services-container', { origin: 'bottom' });
-ScrollReveal().reveal('.home-content h1', { origin: 'left' });
-ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+ScrollReveal().reveal('.profile-content, .title', { origin: 'top' });
+ScrollReveal().reveal('.profile-img', { origin: 'bottom' });
+ScrollReveal().reveal('.profile-content h1', { origin: 'left' });
+ScrollReveal().reveal('.profile-content p, .about-content', { origin: 'right' });
 
 // typed js 
 const typed = new Typed('.multiple-text', {
