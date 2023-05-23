@@ -412,6 +412,20 @@ span {
     .profile-img img {
         width: 25vw;
     }
+    .box {
+        margin-right: 2rem;
+        margin-left: 3rem;
+    }
+    .card {
+        height: 100px;
+        width: 110px;
+    }
+    .skills h2 {
+        margin-top: -4.70rem;
+    }
+    .skills {
+        margin-top: 7rem;
+    }
   
 }
 
