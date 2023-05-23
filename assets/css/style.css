@@ -426,7 +426,15 @@ span {
     .skills {
         margin-top: 7rem;
     }
-  
+    .swiper {
+        width: 75vw;
+        height: 60vh;
+        margin-top: 1rem;
+    }
+    .more {
+        padding-top: 5rem;
+        padding-bottom: 0;
+    }
 }
 
 @media (max-width: 991px) {
