@@ -435,6 +435,9 @@ span {
         padding-top: 5rem;
         padding-bottom: 0;
     }
+    .footer {
+        margin-bottom: 4rem;
+    }
 }
 
 @media (max-width: 991px) {
