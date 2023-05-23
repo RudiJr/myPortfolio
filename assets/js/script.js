@@ -79,14 +79,14 @@ modalHover.forEach((element) => {
 ScrollReveal({ 
   reset: true,
   distance: '80px',
-  duration: 2000,
+  duration: 1500,
   delay: 100
 });
 
-ScrollReveal().reveal('.profile-content, .title', { origin: 'top' });
+ScrollReveal().reveal('.profile-content', { origin: 'top' });
 ScrollReveal().reveal('.profile-img', { origin: 'bottom' });
-ScrollReveal().reveal('.profile-content h1', { origin: 'left' });
-ScrollReveal().reveal('.profile-content p, .about-content', { origin: 'right' });
+ScrollReveal().reveal('.profile-content h1, .title', { origin: 'left' });
+ScrollReveal().reveal('.profile-content p', { origin: 'right' });
 
 // typed js 
 const typed = new Typed('.multiple-text', {
