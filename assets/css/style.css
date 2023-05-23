@@ -447,9 +447,55 @@ span {
     section, main {
         padding: 10rem 3% 2rem;
     }
-    .contact {
-        min-height: auto;
+ 
+    .profile-img img {
+        width: 25vw;
     }
+    .about-content p {
+        width: 70vw;
+    }
+    .about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .card {
+        height: 110px;
+        width: 120px;
+        text-align: center;
+        padding-top: .6rem;
+    }
+    .skills h2 {
+        margin: 0;
+        
+    }
+    .skills {
+        margin-top: 4rem;
+        width: 80vw;
+    }
+    .swiper {
+        width: 90vw;
+        height: 60vh;
+        margin-top: 1rem;
+    }
+    .more {
+        padding-top: 6rem;
+        padding-bottom: 0;
+    }
+    .footer {
+        margin-bottom: 4rem;
+    }
+}
+@media (max-width: 890px) {
+    .swiper {
+        height: 50vh;
+    }
+    .more {
+       
+        padding-bottom: 0;
+    }   
 }
 
 @media (max-width: 768px) {
