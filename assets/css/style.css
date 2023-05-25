@@ -406,6 +406,22 @@ span {
 }
 
 /* breakpoint responsivity */
+@media (max-width: 1571px) {
+    .box {
+        width: 45vw;
+        margin-left: 2rem;
+    }
+}
+@media (max-width: 1400px) {
+    .box {
+        width: 50vw;
+    }
+    .card {
+        height: 120px;
+        width: 130px;
+    }
+}
+
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
