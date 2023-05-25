@@ -440,11 +440,17 @@ span {
     .about-content p {
         width: 65vw;
     }
+    .box {
+        width: inherit;
+        margin-left: 0;
+    }
     .card {
         padding-top: 1rem;
+        margin: 0 4rem 3rem 4rem;
     }
     .skills h2 {
         margin-top: -4.70rem;
+        text-align: center;
     }
     .skills {
         margin-top: 7rem;
@@ -468,6 +474,9 @@ span {
         width: 70vw;
         height: 50vh;
     }
+    .card {
+        margin: 0 3rem 2rem 3rem;
+    }
 }
 
 @media (max-width: 991px) {
@@ -484,10 +493,12 @@ span {
     .about-content p {
         width: 70vw;
     }
+   
     .card {
         height: 110px;
         width: 120px;
         padding-top: .6rem;
+       
     }
     .skills h2 {
         margin: 0;
@@ -513,6 +524,11 @@ span {
     .swiper {
         height: 50vh;
     }
+    
+   .card {
+    height: 110px;
+    width: 100px;
+   }
 }
 
 @media (max-width: 768px) {
@@ -549,6 +565,16 @@ span {
         width: 35vw;
         margin-top: 4rem;
     }
+    
+    .card {
+        margin: 0 2rem 2rem 2rem;
+    }
+}
+
+@media (max-width: 675px) {
+    .card {
+        margin: 0 4.60rem 2rem 4.60rem;
+    }
 }
 
 @media (max-width: 576px) {
@@ -567,5 +593,8 @@ span {
     }
     .profile-img img {
         width: 80vw;
+    }
+    .card {
+        margin: 0 1.26rem 2rem 1.26rem;
     }
 }
