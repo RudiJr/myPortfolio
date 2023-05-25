@@ -190,6 +190,7 @@ span {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 4rem;
+    width: 40vw;
 }
 
 .card {
