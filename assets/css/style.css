@@ -175,7 +175,7 @@ span {
 .about-content p {
     font-size: 1.6rem;
     margin: 0 0 3rem;
-    width: 35vw;
+    width: 40vw;
 }
 
 .skills h2 {
@@ -412,7 +412,15 @@ span {
         width: 45vw;
         margin-left: 2rem;
     }
+    .skills h2{
+        margin-top: 3rem;
+    }
+    .about-content p {
+        margin: 0;
+        width: 50vw;
+    }
 }
+
 @media (max-width: 1400px) {
     .box {
         width: 50vw;
@@ -420,6 +428,12 @@ span {
     .card {
         height: 120px;
         width: 130px;
+    }
+    .about-content p {
+        width: 40vw;
+    }
+    .skills h2{
+        margin-top: 3rem;
     }
 }
 
@@ -438,7 +452,9 @@ span {
     }
     .card {
         padding-top: 1rem;
-        margin: 0 3.60rem 3.20rem 3.60rem;
+        margin: 0 4.20rem 2.20rem 4.20rem;
+        height: 110px;
+        width: 120px;
     }
     .swiper {
         width: 75vw;
@@ -482,8 +498,6 @@ span {
         width: 80vw;
     }
     .card {
-        height: 110px;
-        width: 120px;
         padding-top: .6rem;
     }
     .swiper {
@@ -502,7 +516,6 @@ span {
     .swiper {
         height: 50vh;
     }
-    
     .box {
         width: 90vw;
     }  
@@ -560,9 +573,19 @@ span {
     }
     .box {
         width: 70vw;
+        margin-top: 1.40rem;
     }
     .card {
-        margin: 0 4.60rem 2rem 4.60rem;
+        margin: 0 2.50rem 1.20rem 2.50rem;
+    }
+    .skills h2 {
+        margin-top: 1rem;
+    }
+    .about-content h2{
+        margin-top: 2.40rem;
+    }
+    .about-content p {
+        margin-bottom: 0;
     }
 }
 
@@ -570,12 +593,21 @@ span {
     html {
         font-size: 50%;
     }
-    
     .box {
-        width: 90vw;
+        width: 80vw;
+        margin-top: 2rem;
     }
     .card { 
         padding-top: 1.30rem;
+    }
+    .skills h2 {
+        margin-top: 3rem;
+    }
+    .about-content h2{
+        margin-top: 4rem;
+    }
+    .about-content p {
+        margin-bottom: 0;
     }
 }
 
@@ -588,5 +620,14 @@ span {
     }
     .card {
         margin: 0 1.26rem 2rem 1.26rem;
+    }
+    .skills h2 {
+        margin-top: 1rem;
+    }
+    .about-content h2{
+        margin-top: 2rem;
+    }
+    .about-content p {
+        width: 80vw;
     }
 }
