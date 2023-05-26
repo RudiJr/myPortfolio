@@ -630,4 +630,13 @@ span {
     .about-content p {
         width: 80vw;
     }
+    .contact a {
+        height: 9rem;
+        width: 9rem;
+        font-size: 1.60rem;
+        margin: 0 2rem  2rem 2rem;
+    }
+    .footer {
+        margin-bottom: 5rem;
+    }
 }
