@@ -145,8 +145,9 @@ span {
 
 .about {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 2rem;
 }
 
@@ -178,7 +179,7 @@ span {
 }
 
 .skills h2 {
-    margin-top: 8.70rem;
+    margin-top: 6rem;
     background: linear-gradient(130deg, var(--main-color) 50%, var(--main-txt) 0);
     background-clip: text;
     -webkit-background-clip: text;
@@ -189,7 +190,7 @@ span {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 4rem;
+    margin-top: 3rem;
     width: 40vw;
 }
 
@@ -429,30 +430,15 @@ span {
     .profile-img img {
         width: 25vw;
     }
-    
-    .about {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 2rem;
-    }
     .about-content p {
         width: 65vw;
     }
     .box {
         width: inherit;
-        margin-left: 0;
     }
     .card {
         padding-top: 1rem;
-        margin: 0 4rem 3rem 4rem;
-    }
-    .skills h2 {
-        margin-top: -4.70rem;
-    }
-    .skills {
-        margin-top: 7rem;
+        margin: 0 3.60rem 3.20rem 3.60rem;
     }
     .swiper {
         width: 75vw;
@@ -474,7 +460,7 @@ span {
         height: 50vh;
     }
     .card {
-        margin: 0 3rem 2rem 3rem;
+        margin: 0 3rem 2.20rem 3rem;
     }
 }
 
@@ -492,20 +478,13 @@ span {
     .about-content p {
         width: 70vw;
     }
-   
+    .box {
+        width: 80vw;
+    }
     .card {
         height: 110px;
         width: 120px;
         padding-top: .6rem;
-       
-    }
-    .skills h2 {
-        margin: 0;
-        
-    }
-    .skills {
-        margin-top: 4rem;
-        width: 80vw;
     }
     .swiper {
         width: 90vw;
@@ -524,10 +503,9 @@ span {
         height: 50vh;
     }
     
-   .card {
-    height: 110px;
-    width: 100px;
-   }
+    .box {
+        width: 90vw;
+    }  
 }
 
 @media (max-width: 768px) {
@@ -564,13 +542,25 @@ span {
         width: 35vw;
         margin-top: 4rem;
     }
-    
+    .box {
+        width: 92vw;
+    }
     .card {
-        margin: 0 2rem 2rem 2rem;
+        margin: 0 2rem 2.10rem 2rem;
     }
 }
 
 @media (max-width: 675px) {
+    .profile {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .profile-img img {
+        width: 60vw;
+    }
+    .box {
+        width: 70vw;
+    }
     .card {
         margin: 0 4.60rem 2rem 4.60rem;
     }
@@ -580,18 +570,21 @@ span {
     html {
         font-size: 50%;
     }
+    
+    .box {
+        width: 90vw;
+    }
+    .card { 
+        padding-top: 1.30rem;
+    }
 }
 
 @media (max-width: 450px){
     html {
         font-size: 50%;
     }
-    .profile {
-        flex-direction: column;
-        justify-content: center;
-    }
     .profile-img img {
-        width: 80vw;
+        width: 70vw;
     }
     .card {
         margin: 0 1.26rem 2rem 1.26rem;
