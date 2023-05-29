@@ -466,6 +466,12 @@ span {
         height: 480px;
         margin-top: 1rem;
     }
+    #project {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     .more {
         padding-top: 4rem;
         padding-bottom: 0;
