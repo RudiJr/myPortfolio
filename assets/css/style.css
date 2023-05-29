@@ -213,6 +213,11 @@ span {
     font-size: 1.44rem;
 }
 
+.txt-350-screen {
+    color: #CCCCCC;
+    display: none;
+}
+
 /* Contact section */
 
 .contact {
@@ -297,8 +302,8 @@ span {
 
 /* swiper style */
 .swiper {
-    width: 55vw;
-    height: 65vh;
+    width: 980px;
+    height: 600px;
     z-index: 1;
 }
 
@@ -457,12 +462,12 @@ span {
         width: 120px;
     }
     .swiper {
-        width: 75vw;
-        height: 60vh;
+        width: 720px;
+        height: 480px;
         margin-top: 1rem;
     }
     .more {
-        padding-top: 5rem;
+        padding-top: 4rem;
         padding-bottom: 0;
     }
     .footer {
@@ -471,10 +476,6 @@ span {
 }
 
 @media (max-width: 1070px) {
-    .swiper {
-        width: 70vw;
-        height: 50vh;
-    }
     .card {
         margin: 0 3rem 2.20rem 3rem;
     }
@@ -500,10 +501,6 @@ span {
     .card {
         padding-top: .6rem;
     }
-    .swiper {
-        width: 90vw;
-        height: 60vh;
-    }
     .more {
         padding-top: 6rem;
         padding-bottom: 0;
@@ -513,9 +510,6 @@ span {
     }
 }
 @media (max-width: 890px) {
-    .swiper {
-        height: 50vh;
-    }
     .box {
         width: 90vw;
     }  
@@ -561,6 +555,10 @@ span {
     .card {
         margin: 0 2rem 2.10rem 2rem;
     }
+    .swiper {
+        width: 620px;
+        height: 420px;
+    }
 }
 
 @media (max-width: 675px) {
@@ -587,6 +585,10 @@ span {
     .about-content p {
         margin-bottom: 0;
     }
+    .swiper {
+        width: 540px;
+        height: 370px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -608,6 +610,10 @@ span {
     }
     .about-content p {
         margin-bottom: 0;
+    }
+    .swiper {
+        width: 410px;
+        height: 280px;
     }
 }
 
@@ -638,5 +644,31 @@ span {
     }
     .footer {
         margin-bottom: 5rem;
+    }
+    .swiper {
+        width: 320px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 350px){
+    #project {
+        display: none;
+    }
+    nav a:nth-child(3) {
+        display: none;
+    }
+    .navbar {
+        height: 18vh;
+    }
+    .card {
+        margin: 0 1.26rem 2rem 1.26rem;
+        height: 90px;
+        width: 100px;
+        padding-top: 0;
+    }
+    .box {
+        width: 90vw;
+        margin-top: 1.40rem;
     }
 }
