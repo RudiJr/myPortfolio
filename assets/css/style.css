@@ -565,6 +565,15 @@ span {
         width: 620px;
         height: 420px;
     }
+    .more {
+        display: none;
+    }
+    .project-title {
+        margin-bottom: 6rem;
+    }
+    .swiper-button-prev, .swiper-button-next {
+        display: none;
+    }
 }
 
 @media (max-width: 675px) {
@@ -632,15 +641,21 @@ span {
     }
     .card {
         margin: 0 1.26rem 2rem 1.26rem;
+        height: 90px;
+        width: 100px;
+        padding-top: 0;
+    }
+    .box {
+        margin-top: 1rem;
     }
     .skills h2 {
-        margin-top: 1rem;
+        margin-top: 0;
     }
     .about-content h2{
         margin-top: 2rem;
     }
     .about-content p {
-        width: 80vw;
+        width: 85vw;
     }
     .contact a {
         height: 9rem;
@@ -669,9 +684,6 @@ span {
     }
     .card {
         margin: 0 1.26rem 2rem 1.26rem;
-        height: 90px;
-        width: 100px;
-        padding-top: 0;
     }
     .box {
         width: 90vw;
