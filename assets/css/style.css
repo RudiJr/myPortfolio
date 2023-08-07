@@ -161,6 +161,15 @@ span {
     overflow: unset;
 }
 
+.abt-txt {
+    white-space:pre-line;
+    text-align: left;
+}
+.h {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
 .about-content h2 {
     text-align: left;
     line-height: 1.2rem;
@@ -423,7 +432,6 @@ span {
     }
     .about-content p {
         margin: 0;
-        width: 50vw;
     }
 }
 
@@ -434,9 +442,6 @@ span {
     .card {
         height: 120px;
         width: 130px;
-    }
-    .about-content p {
-        width: 40vw;
     }
     .skills h2{
         margin-top: 3rem;
@@ -449,9 +454,6 @@ span {
     }
     .profile-img img {
         width: 25vw;
-    }
-    .about-content p {
-        width: 65vw;
     }
     .box {
         width: inherit;
@@ -499,9 +501,6 @@ span {
     .profile-img img {
         width: 25vw;
     }
-    .about-content p {
-        width: 70vw;
-    }
     .box {
         width: 80vw;
     }
@@ -515,6 +514,7 @@ span {
     .footer {
         margin-bottom: 4rem;
     }
+    
 }
 @media (max-width: 890px) {
     .box {
@@ -575,6 +575,11 @@ span {
     .swiper-button-prev, .swiper-button-next {
         display: none;
     }
+    .about-content p {
+        width: 70vw;
+        margin: 0;
+    }
+   
 }
 
 @media (max-width: 675px) {
@@ -593,13 +598,13 @@ span {
         margin: 0 2.50rem 1.20rem 2.50rem;
     }
     .skills h2 {
-        margin-top: 1rem;
+        margin-top: 0;
+    }
+    .about-content p {
+        width: 80vw;
     }
     .about-content h2{
         margin-top: 2.40rem;
-    }
-    .about-content p {
-        margin-bottom: 0;
     }
     .swiper {
         width: 540px;
@@ -619,13 +624,10 @@ span {
         padding-top: 1.30rem;
     }
     .skills h2 {
-        margin-top: 3rem;
+        margin-top: 1rem;
     }
     .about-content h2{
         margin-top: 4rem;
-    }
-    .about-content p {
-        margin-bottom: 0;
     }
     .swiper {
         width: 410px;
@@ -654,9 +656,6 @@ span {
     }
     .about-content h2{
         margin-top: 2rem;
-    }
-    .about-content p {
-        width: 85vw;
     }
     .contact a {
         height: 9rem;
