@@ -222,11 +222,6 @@ span {
     font-size: 1.44rem;
 }
 
-.txt-350-screen {
-    color: #CCCCCC;
-    display: none;
-}
-
 /* Contact section */
 
 .contact {
@@ -572,9 +567,7 @@ span {
     .project-title {
         margin-bottom: 6rem;
     }
-    .swiper-button-prev, .swiper-button-next {
-        display: none;
-    }
+    
     .about-content p {
         width: 70vw;
         margin: 0;
@@ -680,7 +673,7 @@ span {
         display: none;
     }
     .navbar {
-        height: 30vh;
+        height: 20vh;
     }
     .card {
         margin: 0 1.26rem 2rem 1.26rem;
