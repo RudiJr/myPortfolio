@@ -540,7 +540,6 @@ span {
         font-size: 2rem;
         margin: 3rem 0;
     }
-    
     .profile-content h3 {
         font-size: 2.6rem;
     }
@@ -567,12 +566,30 @@ span {
     .project-title {
         margin-bottom: 6rem;
     }
-    
     .about-content p {
         width: 70vw;
         margin: 0;
     }
-   
+    .slide-modal h4 {
+        font-size: 2.40rem;
+    }
+    .slide-modal p {
+        font-size: 1.7rem;
+        width: 40vw;
+    }
+    .slide-modal a{
+        width: 6rem;
+        height: 6rem;
+        margin: 0 2rem 1rem 2rem;
+    }
+    .tech i{
+        width: 6rem;
+        height: 6rem;
+        font-size: 5.90rem; 
+    }
+    .tech p {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 675px) {
@@ -603,6 +620,25 @@ span {
         width: 540px;
         height: 370px;
     }
+    .slide-modal p {
+        width: 50vw;
+    }
+    .slide-modal a{
+        width: 5rem;
+        height: 5rem;
+        margin: 0 2rem 2rem 2rem;
+    }
+    .tech i{
+        width: 5rem;
+        height: 5rem;
+        font-size: 4.70rem; 
+    }
+    .tech {
+        margin-bottom: 2rem;
+    }
+    .slide-modal a i, i.bx.bx-link-external::before {
+        font-size: 4.30rem;
+    }
 }
 
 @media (max-width: 576px) {
@@ -625,6 +661,29 @@ span {
     .swiper {
         width: 410px;
         height: 280px;
+    }
+    .slide-modal p {
+        width: 60vw;
+        margin: 0;
+    }
+    .slide-modal a{
+        width: 4rem;
+        height: 4rem;
+        margin: 0 2rem 3rem 2rem;
+    }
+    .tech i{
+        width: 6rem;
+        height: 6rem;
+        font-size: 5.90rem; 
+    }
+    .tech p {
+        font-size: 2rem;
+    }
+    .tech {
+        margin-bottom: 1rem;
+    }
+    .slide-modal a i, i.bx.bx-link-external::before{
+        font-size: 3rem;
     }
 }
 
@@ -659,13 +718,6 @@ span {
     .footer {
         margin-bottom: 5rem;
     }
-    .swiper {
-        width: 320px;
-        height: 220px;
-    }
-}
-
-@media (max-width: 350px){
     #project {
         display: none;
     }
@@ -675,6 +727,9 @@ span {
     .navbar {
         height: 20vh;
     }
+}
+
+@media (max-width: 350px){
     .card {
         margin: 0 1.26rem 2rem 1.26rem;
     }
