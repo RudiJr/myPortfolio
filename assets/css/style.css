@@ -321,8 +321,6 @@ span {
 }
 
 .swiper-button-prev, .swiper-button-next {
-   display: flex;
-   justify-content: center;
    color: var(--arrow-color);
 }
 
