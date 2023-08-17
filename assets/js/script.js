@@ -36,6 +36,7 @@ window.onscroll = () => {
 const swiper = new Swiper('.swiper', {
   effect: "cube",
   grabCursor: true,
+  loop: true,
   cubeEffect: {
     shadow: true,
     slideShadows: true,
