@@ -108,12 +108,12 @@ span {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     background: transparent;
     border: .2rem solid var(--main-color);
     border-radius: 50%;
-    font-size: 2rem;
+    font-size: 2.60rem;
     color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
 }
@@ -124,23 +124,6 @@ span {
     transition: .7s ease-in-out;
 }
 
-.btn-cv {
-    display: inline-block;
-    padding: 1rem 2.8rem;
-    background: var(--main-color);
-    border-radius: 4rem;
-    font-size: 1.6rem;
-    color: var(--main-txt);
-    letter-spacing: .1rem;
-    font-weight: 600;
-    transition: .7s ease-in-out;
-    border: .2rem solid transparent;
-}
-
-.btn-cv:hover {
-    background-color: transparent;
-    border: .2rem solid var(--main-color);
-}
 
 /* Main section */
 
