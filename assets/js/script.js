@@ -97,3 +97,14 @@ const typed = new Typed('.multiple-text', {
   backDelay: 1000,
   loop: true
 });
+
+const switchStyle = document.querySelector('[data-style]')
+const switchBtn = document.querySelector('#switch-button');
+
+switchBtn.addEventListener('click', () => {
+  if(switchBtn.checked) {
+    switchStyle.setAttribute('href', `/assets/css/light.css`);
+  }else {
+    switchStyle.setAttribute('href', `/assets/css/style.css`);
+  }
+});
