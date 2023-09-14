@@ -1,0 +1,796 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #edf2f4;
+    --main-color: #571aad;
+    --main-txt: #222831;
+    --card-color: #fff;
+    --grey: #5B5B5B;
+    
+    --arrow-color: var(--main-txt);
+    --swiper-theme-color: var(--main-txt);
+
+    --hue: 255;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--main-txt);
+}
+
+section, main {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+span {
+    color: var(--main-color);
+}
+
+
+/* Header */
+
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 2rem 9%;
+    background-color: var(--bg-color);
+    border-bottom: var(--main-color) solid .10rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 2;
+}
+
+.navbar {
+    margin-right: 3rem;
+}
+
+
+.navbar a {
+    font-size: 1.8rem;
+    color: var(--grey);
+    margin: 0 2.58rem 0 1.20rem;
+    transition: .3s;
+    font-weight: 500;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: #6000c0;
+    transition: .5s ease-in-out;
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--main-txt);
+    display: none;
+    cursor: pointer;
+}
+
+/* Profile section */
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-img img {
+    width: 23vw;
+}
+
+.profile-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.profile-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.profile-content p {
+    font-size: 1.6rem;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2.60rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+}
+
+.social-media a:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+    transition: .7s ease-in-out;
+}
+
+
+/* Main section */
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 4.5rem;
+    color: var(--main-txt);
+}
+
+.about-content {
+    overflow: unset;
+}
+
+.abt-txt {
+    white-space:pre-line;
+    text-align: left;
+}
+.h {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2rem;
+    overflow: unset;
+}
+
+.about-content h1 {
+    font-size: 2.6rem;
+    margin-top: 3rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 0 0 3rem;
+    width: 40vw;
+}
+
+.skills h2 {
+    margin-top: 6rem;
+    background: linear-gradient(130deg, var(--main-color) 50%, var(--main-txt) 0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    width: 40vw;
+}
+
+.card {
+    height: 120px;
+    width: 140px;
+    border-radius: 1.25rem;
+    background: var(--card-color);
+    margin: 0 1.70rem 1.50rem 0;
+    text-align: center;
+}
+
+.card i {
+    font-size: 6rem;
+    margin: 1rem 0;
+    color: var(--main-color);
+}
+
+.box .card h5 {
+    font-size: 1.44rem;
+}
+
+/* Contact section */
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    position: relative;
+}
+
+.contact a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 0 3rem 2rem 3rem;
+}
+
+.social-box {
+    display: flex;
+    justify-content: center;
+}
+
+.social-card i {
+    font-size: 6rem;
+    margin: 1rem 0;
+    background: linear-gradient(140deg, var(--main-color) 30%, var(--main-txt) 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social-card h5 {
+    font-size: 1.80rem;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contact> :first-child {
+    margin-bottom: 6rem;
+}
+
+.social-card a i:hover {
+    background: var(--main-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 1s ease-in-out;
+}
+
+/* project section */ 
+.project-title, .more {
+    text-align: center;
+}
+
+.project-title {
+    font-size: 5.6rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--main-color) 50%, var(--main-txt) 0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+    
+.more{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    font-size: 1.65rem;
+}
+
+/* swiper style */
+.swiper {
+    width: 980px;
+    height: 600px;
+    z-index: 1;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+   color: var(--arrow-color);
+}
+
+.slide-modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0, .1), #7b2cbf);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); 
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px;
+    animation: 1s fadeInOut;
+}
+
+@keyframes fadeInOut {
+    from {
+      opacity: 0.1;
+    }
+  }
+
+.slide-modal h4 {
+    font-size: 3rem;
+}
+
+.slide-modal p {
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+    width: 30vw;
+}
+
+.slide-modal h4, .slide-modal p {
+    color: var(--txt-color);
+}
+
+.slide-modal a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 7rem;
+    background: var(--bg-color);
+    border-radius: 50%;
+    margin: 0 2rem 1rem 2rem;
+    
+}
+
+.tech i{
+    width: 7.60rem;
+    height: 7.60rem;
+    font-size: 7.20rem; 
+    color: var(--card-color);
+    border-radius: 25%;
+    background: var(--main-txt);
+    margin: 0 1rem 0 1rem;
+    padding-top: .4rem;
+    cursor:auto;
+}
+
+.tech p {
+    font-size: 2.60rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+.slide-modal a i{
+    font-size: 4.40rem;
+    color: var(--main-txt);
+}
+
+.tech {
+    margin-bottom: 7rem;
+}
+
+.icons {
+    margin-bottom: 1rem;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    font-size: 2.40rem;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 2rem;
+}
+
+.footer p {
+    font-weight: 400;
+    font-size: 1.80rem;
+}
+
+/* breakpoint responsivity */
+@media (max-width: 1571px) {
+    .box {
+        width: 45vw;
+        margin-left: 2rem;
+    }
+    .skills h2{
+        margin-top: 3rem;
+    }
+    .about-content p {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1400px) {
+    .box {
+        width: 50vw;
+    }
+    .card {
+        height: 120px;
+        width: 130px;
+    }
+    .skills h2{
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+    .profile-img img {
+        width: 25vw;
+    }
+    .box {
+        width: inherit;
+    }
+    .card {
+        padding-top: 1rem;
+        margin: 0 4.20rem 2.20rem 4.20rem;
+        height: 110px;
+        width: 120px;
+    }
+    .swiper {
+        width: 720px;
+        height: 480px;
+        margin-top: 1rem;
+    }
+    #project {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .more {
+        padding-top: 4rem;
+        padding-bottom: 0;
+    }
+    .footer {
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 1070px) {
+    .card {
+        margin: 0 3rem 2.20rem 3rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 3%;
+    }
+    section, main {
+        padding: 10rem 3% 2rem;
+    }
+ 
+    .profile-img img {
+        width: 25vw;
+    }
+    .box {
+        width: 80vw;
+    }
+    .card {
+        padding-top: .6rem;
+    }
+    .more {
+        padding-top: 6rem;
+        padding-bottom: 0;
+    }
+    .footer {
+        margin-bottom: 4rem;
+    }
+    
+}
+@media (max-width: 890px) {
+    .box {
+        width: 90vw;
+    }  
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 0;
+        left: 70%;
+        width: 40%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        height: 25vh;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
+        display: none;
+    }
+    .navbar.active {
+        display: block;
+    }
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .profile-content h3 {
+        font-size: 2.6rem;
+    }
+    .profile-content h1 {
+        font-size: 5rem;
+    }
+    .profile-img img {
+        width: 35vw;
+        margin-top: 4rem;
+    }
+    .box {
+        width: 92vw;
+    }
+    .card {
+        margin: 0 2rem 2.10rem 2rem;
+    }
+    .swiper {
+        width: 620px;
+        height: 420px;
+    }
+    .more {
+        display: none;
+    }
+    .project-title {
+        margin-bottom: 6rem;
+    }
+    .about-content p {
+        width: 70vw;
+        margin: 0;
+    }
+    .slide-modal h4 {
+        font-size: 2.40rem;
+    }
+    .slide-modal p {
+        font-size: 1.7rem;
+        width: 40vw;
+    }
+    .slide-modal a{
+        width: 6rem;
+        height: 6rem;
+        margin: 0 2rem 1rem 2rem;
+    }
+    .tech i{
+        width: 6rem;
+        height: 6rem;
+        font-size: 5.90rem; 
+    }
+    .tech p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 675px) {
+    .profile {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .profile-img img {
+        width: 60vw;
+    }
+    .box {
+        width: 70vw;
+        margin-top: 1.40rem;
+    }
+    .card {
+        margin: 0 2.50rem 1.20rem 2.50rem;
+    }
+    .skills h2 {
+        margin-top: 0;
+    }
+    .about-content p {
+        width: 80vw;
+    }
+    .about-content h2{
+        margin-top: 2.40rem;
+    }
+    .swiper {
+        width: 540px;
+        height: 370px;
+    }
+    .slide-modal p {
+        width: 50vw;
+    }
+    .slide-modal a{
+        width: 5rem;
+        height: 5rem;
+        margin: 0 2rem 2rem 2rem;
+    }
+    .tech i{
+        width: 5rem;
+        height: 5rem;
+        font-size: 4.70rem; 
+    }
+    .tech {
+        margin-bottom: 2rem;
+    }
+    .slide-modal a i, i.bx.bx-link-external::before {
+        font-size: 4.30rem;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 50%;
+    }
+    .box {
+        width: 80vw;
+        margin-top: 2rem;
+    }
+    .card { 
+        padding-top: 1.30rem;
+    }
+    .skills h2 {
+        margin-top: 1rem;
+    }
+    .about-content h2{
+        margin-top: 4rem;
+    }
+    .swiper {
+        width: 410px;
+        height: 280px;
+    }
+    .slide-modal p {
+        width: 60vw;
+        margin: 0;
+    }
+    .slide-modal a{
+        width: 4rem;
+        height: 4rem;
+        margin: 0 2rem 3rem 2rem;
+    }
+    .tech i{
+        width: 6rem;
+        height: 6rem;
+        font-size: 5.90rem; 
+    }
+    .tech p {
+        font-size: 2rem;
+    }
+    .tech {
+        margin-bottom: 1rem;
+    }
+    .slide-modal a i, i.bx.bx-link-external::before{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 450px){
+    html {
+        font-size: 50%;
+    }
+    .profile-img img {
+        width: 70vw;
+    }
+    .card {
+        margin: 0 1.26rem 2rem 1.26rem;
+        height: 90px;
+        width: 100px;
+        padding-top: 0;
+    }
+    .box {
+        margin-top: 1rem;
+    }
+    .skills h2 {
+        margin-top: 0;
+    }
+    .about-content h2{
+        margin-top: 2rem;
+    }
+    .contact a {
+        height: 9rem;
+        width: 9rem;
+        font-size: 1.60rem;
+        margin: 0 2rem  2rem 2rem;
+    }
+    .footer {
+        margin-bottom: 5rem;
+    }
+    #project {
+        display: none;
+    }
+    nav a:nth-child(3) {
+        display: none;
+    }
+    .navbar {
+        height: 20vh;
+    }
+}
+
+@media (max-width: 350px){
+    .card {
+        margin: 0 1.26rem 2rem 1.26rem;
+    }
+    .box {
+        width: 90vw;
+        margin-top: 1.40rem;
+    }
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #222;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #5a189a;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
