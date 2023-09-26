@@ -512,6 +512,7 @@ span {
 @media (max-width: 768px) {
     #menu-icon {
         display: block;
+        margin-right: 2rem;
     }
     .navbar {
         position: absolute;
@@ -694,6 +695,8 @@ span {
     }
     .box {
         margin-top: 1rem;
+        width: 90vw;
+        margin: 0 5rem 2.10rem 5rem;
     }
     .skills h2 {
         margin-top: 0;
@@ -718,6 +721,8 @@ span {
     }
     .navbar {
         height: 20vh;
+        left: 40%;
+        width: 25%;
     }
 }
 
